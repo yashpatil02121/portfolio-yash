@@ -2,10 +2,10 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(270deg, #ffffff, #e6fff3, #cffcec);
+    background: linear-gradient(270deg, #a16eff, #ff62d8, #7626e6);
     background-size: 600% 600%;
     animation: gradientMove 10s ease infinite;
-    color: #333;
+    color: #fff; /* Make all text white */
     line-height: 1.6;
   }
 
@@ -28,7 +28,7 @@ html {
 
   /* Navbar */
 nav {
-    background: linear-gradient(90deg, #0b3d0b, #198754); /* Ensure gradient covers full navbar */
+    background: linear-gradient(90deg, #7626e6, #5a0f99); /* Purple to deeper purple gradient */
     color: #fff;
     padding: 1em 0; /* Adjust padding for consistent height */
     position: sticky;
@@ -37,6 +37,7 @@ nav {
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
     border: none; /* Remove any unintended border */
+    text-align: center;
 }
 
 /* Remove gaps or unwanted space */
@@ -51,6 +52,7 @@ nav ul {
     justify-content: center;
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -59,19 +61,19 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #e8f5e9; /* Light green text */
-    font-size: 1.2em;
+    color: #f4e3f8; /* Light purple text */
+    font-size: 1.2em; /* Consistent font size for all screens */
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #6ee7b7; /* Lighter green hover effect */
+    color: #e7b7ff; /* Softer purple hover effect */
 }
 
 /* Footer */
 footer {
-    background: linear-gradient(90deg, #0b3d0b, #198754); /* Gradient for footer */
-    color: #e8f5e9;
+    background: linear-gradient(90deg, #7626e6, #5a0f99); /* Gradient for footer */
+    color: #f4e3f8;
     text-align: center;
     padding: 1em 0;
     position: fixed; /* Fix the footer at the bottom */
@@ -83,14 +85,14 @@ footer {
 }
 
 footer a {
-    color: #aed581;
+    color: #e7b7ff;
     text-decoration: none;
     margin: 0 0.5em;
     transition: color 0.5s;
 }
 footer a:hover {
     text-decoration: underline;
-    color: #dcedc8;
+    color: #f7ceff;
     transform: scale(1.1);
 }
 
@@ -101,21 +103,24 @@ main {
     margin: auto;
     margin-bottom: 4em; /* Add margin to ensure the footer doesn't overlap */
     animation: fadeIn 2s ease-in-out;
+    color: #fff; /* Ensure main content text is white */
 }
 
 h1, h2 {
     text-align: center;
-    background: linear-gradient(90deg, #0b3d0b, #198754); /* Gradient for headings */
+    background: linear-gradient(90deg, #7626e6, #5a0f99); /* Gradient for headings */
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: white; /* Ensure headings are plain white */
     animation: fadeIn 2s ease-in-out;
     transform: scale(1);
     animation: scaleUp 2s ease-in-out;
+    border: none; /* Remove border */
+    text-shadow: none; /* Remove shadow */
 }
 
 /* Buttons */
 button {
-    background: linear-gradient(90deg, #0b3d0b, #198754); /* Gradient for buttons */
+    background: linear-gradient(90deg, #7626e6, #5a0f99); /* Gradient for buttons */
     color: #fff;
     border: none;
     padding: 0.8em 1.2em;
@@ -126,20 +131,20 @@ button {
     animation: pulse 3s infinite;
 }
 button:hover {
-    background: linear-gradient(90deg, #14532d, #1f8e47); /* Darker hover gradient */
+    background: linear-gradient(90deg, #5b179d, #3d0a66); /* Darker hover gradient */
     transform: scale(1.1);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Links */
 a {
-    color: #aed581; /* Lighter green */
+    color: #e7b7ff; /* Softer purple */
     text-decoration: none;
     transition: all 0.5s ease-in-out;
 }
 a:hover {
     text-decoration: underline;
-    color: #4caf50;
+    color: #d292e3;
     transform: scale(1.1);
 }
 
@@ -157,15 +162,24 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+    nav {
+        padding: 0.5em 0; /* Reduce padding for smaller screens */
+    }
     nav ul {
-        flex-direction: column;
-        animation: fadeIn 1.5s ease-in-out;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
     }
     nav ul li {
-        margin: 0.5em 0;
+        margin: 0.5em;
+    }
+    nav ul li a {
+        font-size: 1.1em; /* Slightly smaller font size for mobile */
     }
     h1, h2 {
         font-size: 1.5em;
+    }
+    footer {
+        padding: 0.5em 0; /* Reduce footer padding */
     }
     .card {
         margin: 0.5em;
@@ -174,14 +188,24 @@ a:hover {
 }
 
 @media (max-width: 576px) {
+    nav {
+        padding: 0.4em 0; /* Further reduce padding for very small screens */
+    }
     main {
         padding: 1em;
     }
     nav ul {
+        flex-wrap: wrap;
         text-align: center;
     }
+    nav ul li {
+        margin: 0.4em;
+    }
+    nav ul li a {
+        font-size: 1em; /* Smaller font size for very small screens */
+    }
     footer {
-        padding: 0.5em 0;
+        padding: 0.4em 0; /* Adjust footer padding */
     }
 }
 
@@ -194,18 +218,19 @@ a:hover {
     padding: 1.5em;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     animation: fadeInUp 1s ease-out;
+    color: #333; /* Ensure text in cards is not white */
 }
 .card:hover {
     transform: scale(1.1);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 .card h3 {
-    color: #4caf50; /* Darker green for card titles */
+    color: #d292e3; /* Softer purple for card titles */
     margin-bottom: 0.5em;
     transition: color 0.4s;
 }
 .card:hover h3 {
-    color: #1b5e20;
+    color: #a566b8;
 }
 .card p {
     color: #666;
@@ -229,6 +254,7 @@ form {
     max-width: 600px;
     margin: auto;
     animation: fadeIn 1.5s ease-in-out;
+    color: #333; /* Ensure form text is not white */
 }
 form input, form textarea {
     width: 100%;
@@ -239,8 +265,8 @@ form input, form textarea {
     transition: all 0.4s ease-in-out;
 }
 form input:focus, form textarea:focus {
-    border-color: #4caf50;
-    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    border-color: #a566b8;
+    box-shadow: 0 0 5px rgba(125, 78, 157, 0.5);
 }
 form button {
     width: 100%;
