@@ -1,20 +1,87 @@
-// src/pages/Certifications.js
 import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-const Certifications = () => (
-  <div>
-    <h2>Certifications</h2>
-    <ul>
-      <li><a href="https://coursera.org/share/529ea591cf073b5b17642fb265555b61" target="_blank" rel="noopener noreferrer">Meta: Django Web Framework</a></li>
-      <li><a href="https://coursera.org/share/a22eebb31188dfd11555a3a8b9f9bf42" target="_blank" rel="noopener noreferrer">University of Michigan: Python Data Structures</a></li>
-      <li><a href="https://coursera.org/share/4e088a7a85d9d6ae6ae0bb66a4f5ea92" target="_blank" rel="noopener noreferrer">IBM: Tools for Data Science</a></li>
-      <li><a href="https://coursera.org/share/ba7102687034f41e99cdba07d3b0f858" target="_blank" rel="noopener noreferrer">Vanderbilt University: Prompt Engineering for ChatGPT</a></li>
-      <li><a href="https://coursera.org/share/9bc9fc413c6109f51169ad5317f70e0d" target="_blank" rel="noopener noreferrer">Python for Data Science, AI & Development</a></li>
-      <li><a href="https://coursera.org/share/8c94054aa923a2f999e02dc5d7b0b43b" target="_blank" rel="noopener noreferrer">Programming for Everybody (Getting Started with Python)</a></li>
-      <li><a href="https://coursera.org/share/bd4c424fb3a0636111146c56c889fcd7" target="_blank" rel="noopener noreferrer">Data Analysis with Python</a></li>
-      <li><a href="https://coursera.org/share/11e8a282e17c90d675be01dedda9c634" target="_blank" rel="noopener noreferrer">Statistics for Data Science with Python</a></li>
-    </ul>
-  </div>
-);
+// Import PNGs from src/static folder
+import DataAnalysisPNG from '../static/Coursera Data Analysis with Python.png';
+import PythonDataStructuresPNG from '../static/Coursera Python Data Structures.png';
+import PythonForDataSciencePNG from '../static/Coursera Python for Data Science, AI & Development.png';
+import PythonForEverybodyPNG from '../static/Coursera Python for Everybody.png';
+import StatisticsPNG from '../static/Coursera Statistics for Data Science with Python.png';
+import ToolsForDataSciencePNG from '../static/Coursera Tools for Data Science.png';
+
+const certifications = [
+  {
+    title: 'Coursera Data Analysis with Python',
+    image: DataAnalysisPNG,
+  },
+  {
+    title: 'Coursera Python Data Structures',
+    image: PythonDataStructuresPNG,
+  },
+  {
+    title: 'Coursera Python for Data Science, AI & Development',
+    image: PythonForDataSciencePNG,
+  },
+  {
+    title: 'Coursera Python for Everybody',
+    image: PythonForEverybodyPNG,
+  },
+  {
+    title: 'Coursera Statistics for Data Science with Python',
+    image: StatisticsPNG,
+  },
+  {
+    title: 'Coursera Tools for Data Science',
+    image: ToolsForDataSciencePNG,
+  },
+];
+
+const Certifications = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
+  return (
+    <div>
+      <h2>Certifications</h2>
+      <Slider {...settings}>
+        {certifications.map((cert, index) => (
+          <div key={index} style={{ textAlign: 'center', padding: '10px' }}>
+            <img
+              src={cert.image}
+              alt={cert.title}
+              style={{ width: '100%', borderRadius: '8px', maxHeight: '300px', objectFit: 'contain' }}
+            />
+            <p style={{ marginTop: '10px' }}>{cert.title}</p>
+          </div>
+        ))}
+      </Slider>
+    </div>
+  );
+};
 
 export default Certifications;
