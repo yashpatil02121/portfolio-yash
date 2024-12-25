@@ -17,7 +17,9 @@ const About = () => (
     </ul>
     <h3>Education</h3>
     <ul>
-      <li>B.E. in Artificial Intelligence & Data Science, University of Mumbai (2020-2024): Final CGPA: 9.71</li>
+      <li>B.E. in Artificial Intelligence & Data Science, University of Mumbai (2020-2024)</li>
+      Final Semester CGPA: 9.71 <br></br>
+      Average CGPA: 8.7
       <li>HSC in Computer Science, S.V.P. Junior College of Science: 67.23%</li>
       <li>SSC, St. Francis High School: 88.20%</li>
     </ul>
