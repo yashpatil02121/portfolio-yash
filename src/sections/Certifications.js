@@ -53,6 +53,7 @@ const Certifications = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+    arrows: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -105,27 +106,35 @@ const Certifications = () => {
               }}
             />
 
-            {/* Button */}
-            <a
-              href={cert.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: 'none' }}
+            {/* Button Container */}
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                height: '80px', // Fixed height for the container
+              }}
             >
-              <button
-                style={{
-                  padding: '10px 20px',
-                  margin: '10px 25% 20px 25%',
-                  backgroundColor: '#007bff',
-                  color: '#fff',
-                  border: 'none',
-                  borderRadius: '5px',
-                  cursor: 'pointer',
-                }}
+              <a
+                href={cert.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: 'none' }}
               >
-                View Certification
-              </button>
-            </a>
+                <button
+                  style={{
+                    padding: '10px 20px',
+                    backgroundColor: '#007bff',
+                    color: '#fff',
+                    border: 'none',
+                    borderRadius: '5px',
+                    cursor: 'pointer',
+                  }}
+                >
+                  View Certification
+                </button>
+              </a>
+            </div>
           </div>
         ))}
       </Slider>
