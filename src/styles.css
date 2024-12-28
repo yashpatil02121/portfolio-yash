@@ -93,6 +93,8 @@ footer a:hover {
     transform: scale(1.1);
 }
 
+
+
 /* Main Content */
 main {
     padding: 2em;
@@ -207,7 +209,8 @@ a:hover {
         font-size: 0.6em; /* Smaller font size for very small screens */
     }
     footer {
-        padding: 0.001em 1em 1em 0.1em; /* Adjust footer padding */
+        padding: 0.001em 1em 1em 0.1em; 
+        /* padding: 0.001em 1em 1em 0.1em; Adjust footer padding */
     }
 }
 
