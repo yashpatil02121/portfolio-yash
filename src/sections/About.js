@@ -17,11 +17,11 @@ const About = () => (
     </ul>
     <h3>Education</h3>
     <ul>
-      <li>B.E. in Artificial Intelligence & Data Science, University of Mumbai (2020-2024)</li>
-      Final Semester CGPA: 9.71 <br></br>
+      <li>B.E. in <b>Artificial Intelligence & Data Science</b> with Honours in <b>Cyber Security</b>, University of Mumbai (2020-2024)</li>
+      Final Semester CGPA: <b>9.71</b> <br></br>
       Average CGPA: 8.7
-      <li>HSC in Computer Science, S.V.P. Junior College of Science: 67.23%</li>
-      <li>SSC, St. Francis High School: 88.20%</li>
+      <li>HSC in Computer Science, S.V.P. Junior College of Science: <b>67.23%</b></li>
+      <li>SSC, St. Francis High School: <b>88.20%</b></li>
     </ul>
   </div>
 );

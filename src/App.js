@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './sections/Home';
 import About from './sections/About';
+import ResumeSection from './sections/Resume';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
 import Experience from './sections/Experience';
@@ -19,6 +20,9 @@ const App = () => (
       </section>
       <section id="about">
         <About />
+      </section>
+      <section id="resume">
+        <ResumeSection />
       </section>
       <section id="skills">
         <Skills />
