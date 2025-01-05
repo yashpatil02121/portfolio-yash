@@ -97,7 +97,7 @@ main {
     padding: 2em;
     max-width: 1200px;
     margin: auto;
-    margin-bottom: 4em; /* Add margin to ensure the footer doesn't overlap */
+    margin-bottom: 7em; /* Add margin to ensure the footer doesn't overlap */
     animation: fadeIn 2s ease-in-out;
     color: #000000; /* Ensure main content text is white */
 }
@@ -237,7 +237,7 @@ a:hover {
         font-size: 0.6em; /* Smaller font size for very small screens */
     }
     footer {
-        padding: 0.4em 0; /* Adjust footer padding */
+        padding: 0px 5px 25px 5px; /* Adjust footer padding */
     }
 }
 
