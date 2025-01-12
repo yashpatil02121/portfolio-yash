@@ -106,25 +106,22 @@ const About = () => (
         <ul className="about-content contact-list">
           <li>
             <span className="contact-icon">📞</span>
-            <strong>Phone:</strong> +91 8828587896
+            +91 8828587896
           </li>
           <li>
             <span className="contact-icon">✉️</span>
-            <strong>Email:</strong>{' '}
             <a className="about-link" href="mailto:yashspatil202002@gmail.com">
               yashspatil202002@gmail.com
             </a>
           </li>
           <li>
             <span className="contact-icon">🔗</span>
-            <strong>LinkedIn:</strong>{' '}
             <a className="about-link" href="https://www.linkedin.com/in/yash-patil-6655b5215/">
-              linkedin.com/in/yash-patil
+              linkedin/yash-patil
             </a>
           </li>
           <li>
             <span className="contact-icon">👨‍💻</span>
-            <strong>GitHub:</strong>{' '}
             <a className="about-link" href="https://github.com/yashpatil02121">
               github.com/yashpatil02121
             </a>
@@ -136,14 +133,11 @@ const About = () => (
         <h3 className="about-subheading">Education</h3>
         <ul className="about-content">
           <li>
-            <b>B.E.</b> in <span className="about-highlight">Artificial Intelligence & Data Science</span> with Honours in{' '}
-            <span className="about-highlight">Cyber Security</span>, University of Mumbai (2020-2024)
-          </li>
-          <li>
-            Final Semester CGPA: <span className="about-highlight">9.71</span>
-          </li>
-          <li>
-            Average CGPA: <span className="about-highlight">8.7</span>
+            <b>B.E.</b> in <span className="about-highlight">Artificial Intelligence & Data Science </span>with Honours in{' '}
+            <span className="about-highlight">Cyber Security</span>, <br></br> University of Mumbai (2020-2024) <br></br>
+            Final Semester CGPA: <span className="about-highlight">9.71</span> <br></br>
+            Average CGPA: <span className="about-highlight">8.7</span> <br></br>
+            Honours CGPA: <span className="about-highlight">8</span>
           </li>
           <li>
             <b>HSC</b> in Computer Science, S.V.P. Junior College of Science:{' '}

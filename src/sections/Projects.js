@@ -1,12 +1,18 @@
 import React from 'react';
 
 // Import background images
-import BusImage from '../static/bus.jpg';
-import BloggingGenerationImage from '../static/bloggingGeneration.jpg';
-import DigitalWatermarkingImage from '../static/digitalWatermarking.jpg';
-import AndroidImage from '../static/android.png';
-import CarImage from '../static/car.jpg';
-import BlogImage from '../static/blog.jpg';
+// import BusImage from '../static/bus.jpg';
+import BusImage from '../static/bus.gif';
+// import BloggingGenerationImage from '../static/bloggingGeneration.jpg';
+import BloggingGenerationImage from '../static/blogGeneration.gif';
+// import DigitalWatermarkingImage from '../static/digitalWatermarking.jpg';
+import DigitalWatermarkingImage from '../static/digitalWatermarking.gif';
+// import AndroidImage from '../static/android.png';
+import AndroidImage from '../static/android.gif';
+// import CarImage from '../static/car.jpg';
+import CarImage from '../static/car.gif';
+// import BlogImage from '../static/blog.jpg';
+import BlogImage from '../static/blog.gif';
 
 const projects = [
   {
@@ -80,7 +86,7 @@ const Projects = () => (
         height: 100%;
         background-size: cover;
         background-position: center;
-        opacity: 0.2;
+        opacity: 0.25;
         transition: opacity 0.3s;
         z-index: 0;
       }
