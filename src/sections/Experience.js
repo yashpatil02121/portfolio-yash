@@ -16,10 +16,41 @@ const Experience = () => {
           <h3>Software Developer</h3>
           <p><strong>Company:</strong> Kulp Labs Pvt Ltd Thane</p>
           <p><strong>Duration:</strong> August 2024 – {today}</p>
-          <ul>
-            <li>Maintaining the UI Builder (kulp.app).</li>
-            <li>Creating websites using the UI Builder.</li>
-          </ul>
+          <p><strong>Projects:</strong> </p>
+          <ol>
+            <li>
+              <a href="https://kulp.app" target="_blank">kulp.app</a> - UI Builder
+              <p>A software platform designed to create complete websites, incorporating data handling and logic functionalities. <br></br>Built using Nuxt.js and MongoDB.</p>
+              <p><b>Roles and Responsibilities:</b></p>
+              <ul>
+                <li>Resolving Bugs</li>
+                <li>Implementing New Features</li>
+              </ul>
+            </li>
+          <br></br>
+          <li>
+            <b>KRAF</b> - School Management Software
+            <p>A comprehensive web application for school management, developed with Django as the backend framework and <a href="https://kulp.app" target="_blank">kulp.app</a> for the frontend.</p>
+            <p><b>Roles and Responsibilities:</b></p>
+            <ul>
+              <li>Implemented a robust OTP authentication system.</li>
+              <li>Integrated Celery to schedule and manage notices and messages efficiently.</li>
+              <li>Designed and developed an intuitive user interface.</li>
+              <li>Created and optimized application logic for seamless functionality.</li>
+            </ul>
+          </li>
+          <br></br>
+          <li>
+            <b>MCare</b> - Mobile Repair Course Website
+            <p>An interactive platform with user authentication and role-based access for students and administrators. The website allows users to purchase mobile repair courses, comment on them, and create notes for each video. It emphasizes a user-friendly and visually appealing UI.</p>
+            <p><b>Roles and Responsibilities:</b></p>
+            <ul>
+              <li>Designed and developed an engaging and responsive user interface.</li>
+              <li>Engineered the core application logic to ensure smooth operation.</li>
+            </ul>
+          </li>
+
+          </ol>
         </div>
 
         {/* Data Science Internship Section */}
