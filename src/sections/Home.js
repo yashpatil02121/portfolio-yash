@@ -42,7 +42,7 @@ const Header = () => {
         onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}
       >
         <img
-          src={require('../static/profile.jpg')}
+          src={require('../static/profile.jpeg')}
           alt="Yash Sanjay Patil"
           style={{
             width: '100%',
